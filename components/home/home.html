@@ -1,7 +1,7 @@
-
-<input type="text" ng-model="location"/>
+<form ng-submit="getForecast(location)">
+<input autocomplete type="text" ng-model="location" placeholder="Enter a place..."/></form>
 <!-- add autocomplete to this? -->
-<button ng-click="getForecast(location)">Get Forecast</button>
+<!-- <button ng-click="getForecast(location)">Get Forecast</button> -->
 <br><br>
 <ul>
   <li>{{temp}}</li>
